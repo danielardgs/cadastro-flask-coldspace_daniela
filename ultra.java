@@ -11,7 +11,6 @@ public class ultra extends AdvancedRobot {
         setAdjustGunForRobotTurn(true);
         setAdjustRadarForGunTurn(true);
 
-        // Cores
         setBodyColor(new Color(20, 20, 20));
         setGunColor(new Color(50, 50, 50));
         setRadarColor(new Color(0, 160, 255));
@@ -46,7 +45,6 @@ public class ultra extends AdvancedRobot {
         if (dist > 600) firePower = 1.2;
         else if (dist > 300) firePower = 2.0;
 
-        // Se o canhão estiver quase alinhado, atira
         if (Math.abs(gunTurn) < Math.toRadians(8)) {
             setFire(firePower);
         }
